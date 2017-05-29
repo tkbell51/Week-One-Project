@@ -1,0 +1,138 @@
+*{
+  box-sizing: border-box;
+
+}
+body{
+  background-color: #F2F1E8;
+  font-family: Merriweather;
+}
+nav{
+  font-family: Roboto;
+  margin: 0px;
+}
+
+
+.nav-item {
+    margin-right: 60px;
+    text-transform: uppercase;
+  }
+a{
+  color: #2B2F26;
+}
+a:hover{
+  color: #CD5D67;
+}
+a:active{
+  color: #968772;
+}
+.icon-logo{
+  position: absolute;
+top: 8px;
+left: 10px;
+  background-image: url("images/bent-creek-logo.png");
+  height: 45px;
+  width: 40px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  align-self: flex-start;
+
+}
+.nav-row{
+  margin: 0px;
+  background-color: white;
+  color: #2B2F26;
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+
+}
+.page-img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("images/background-2.jpg");
+  background-size: 100% 100%;
+  background-attachment: fixed;
+  height: 800px;
+  width: 100%;
+}
+.sub-box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #968772;
+  background-color: #F2F1E8;
+  width: 500px;
+  height: 382px;
+
+}
+form{
+  width: 90%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.main-txt{
+  font-family: Merriweather;
+  font-size: 23px;
+  font-weight: 100;
+
+  color: #2B2F26;
+  text-align: center;
+  align-self: center;
+  width: 90%;
+  margin-bottom: -30px;
+
+}
+.sub-txt{
+  width: 100%;
+  text-align: center;
+  font-size: 15px;
+  font-family: Merriweather;
+  font-weight: 400;
+  color: #2B2F26;
+  margin-bottom: -10px;
+
+}
+.submit_button{
+  align-self: center;
+
+}
+.submit_button input {
+  font-size: 20px;
+    padding: 10px;
+    color: #F2F1E8;
+    border: none;
+    background-color: #968772;
+    width: 126px;
+    height: 56px;
+  }
+  .name{
+    border-bottom: 2px solid #968772;
+  }
+  .name input{
+    width: 90%;
+    border: none;
+    background-color: #F2F1E8;
+  }
+  .email{
+    border-bottom: 2px solid #968772;
+  }
+.email input{
+  width: 90%;
+  border: none;
+  background-color: #F2F1E8;
+}
+footer{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: #F2F1E8;
+  height: 100px;
+  background-color: #2B2F26;
+  padding-left: 20px;
+}
