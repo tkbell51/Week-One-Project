@@ -44,10 +44,13 @@ nav a:hover {
 nav a:active{
   color: #968772;
 }
+/*.icon-logo{
+  height: 45px
+}*/
 .icon-logo{
   position: absolute;
-top: 8px;
-left: 10px;
+  top: 8px;
+  left: 10px;
   background-image: url("images/bent-creek-logo.png");
   height: 45px;
   width: 40px;
@@ -211,9 +214,11 @@ blockquote{
   justify-content: space-between;
 }
 #Fac{
+  margin-bottom: 5px;
   flex: 1 1 100%;
 }
 #third-sec p{
+  margin-top: 0px;
   margin-right: 10px;
   flex: 1 1 75%;
 }
