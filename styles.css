@@ -87,7 +87,7 @@ footer{
   justify-content: center;
   align-items: center;
   color: #968772;
-  background-color: #F2F1E8;
+  background-color: #FFFFFF;
   width: 500px;
   height: 382px;
 
@@ -134,20 +134,22 @@ form{
     width: 126px;
     height: 56px;
   }
-  .name{
-    border-bottom: 2px solid #968772;
+  .submit_button input:hover {
+    color: white;
   }
 
+
   input{
-    width: 80%;
+    width: 50%;
     border: none;
-    background-color: #F2F1E8;
-  }
-  input:focus{
-    border-bottom: 2px solid #967343;
-  }
-  .email{
+    background-color: #FFFFFF;
     border-bottom: 2px solid #968772;
+    transition: ease-in-out, width .35s ease-in-out;
+  }
+  .name input:focus, .email input:focus{
+    border-bottom: 2px solid #967343;
+    width: 85%;
+
   }
 
 /*About*/
