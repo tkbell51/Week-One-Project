@@ -5,24 +5,43 @@
 body{
   background-color: #F2F1E8;
   font-family: Merriweather;
+  padding-top: 40px;
 }
+header{
+
+}
+/*Nav Bar*/
 nav{
   font-family: Roboto;
   margin: 0px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  box-shadow: 1px -1px 6px black;
 }
-
+.nav-row{
+  margin: 0px;
+  background-color: white;
+  color: #2B2F26;
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+}
 
 .nav-item {
     margin-right: 60px;
     text-transform: uppercase;
   }
-a{
+nav a{
   color: #2B2F26;
 }
-a:hover{
+nav a:hover {
   color: #CD5D67;
 }
-a:active{
+nav a:active{
   color: #968772;
 }
 .icon-logo{
@@ -37,27 +56,28 @@ left: 10px;
   align-self: flex-start;
 
 }
-.nav-row{
-  margin: 0px;
-  background-color: white;
-  color: #2B2F26;
-  height: 60px;
+/*Footer*/
+footer{
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
-  list-style-type: none;
-
+  color: #F2F1E8;
+  height: 100px;
+  background-color: #2B2F26;
+  padding-left: 20px;
 }
+/*Newsletter*/
 .page-img{
   display: flex;
   justify-content: center;
   align-items: center;
   background-image: url("images/background-2.jpg");
-  background-size: 100% 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   background-attachment: fixed;
-  height: 800px;
-  width: 100%;
+  min-height: 700px;
+
 }
 .sub-box{
   display: flex;
@@ -114,25 +134,232 @@ form{
   .name{
     border-bottom: 2px solid #968772;
   }
-  .name input{
-    width: 90%;
+
+  input{
+    width: 80%;
     border: none;
     background-color: #F2F1E8;
+  }
+  input:focus{
+    border-bottom: 2px solid #967343;
   }
   .email{
     border-bottom: 2px solid #968772;
   }
-.email input{
-  width: 90%;
-  border: none;
-  background-color: #F2F1E8;
+
+/*About*/
+header{
+  text-align: center;
+  font-size: 35px;
 }
-footer{
+.main-content {
+  padding: 0px 15% 2% 15%;
+  font-size: 25px;
+  line-height: 2em;
+}
+.birdhouse{
+  background-image: url("images/birdhouse.jpg");
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 130px;
+  width: 162px;
+  float: left;
+  margin-right: 5%;
+}
+.top-par a {
+  color: #968772;
+}
+.top-par a:hover {
+  color: #967343;
+}
+blockquote{
+  color: #2B2F26;
+  font-family: Merriweather;
+  line-height: 1em;
+  font-weight: 100;
+  border-left: 1.5px solid #2B2F26;
+  font-size: 20px;
+  padding-left: 30px;
+  margin: 50px 0px;
+}
+.section-title{
+  font-weight: 200;
+  margin-bottom: -10px;
+}
+.page-mid{
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
+  background-image: url("images/background-3.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  height: 400px;
+  max-width: 100%;
+}
+.mid-title{
+  font-size: 80px;
+  font-weight: 300;
+  color: white;
+  margin: 0;
+}
+#third-sec{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+#Fac{
+  flex: 1 1 100%;
+}
+#third-sec p{
+  margin-right: 10px;
+  flex: 1 1 75%;
+}
+
+aside{
+  flex: 1 1 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.fig-cap{
+  margin-top: 5px;
+  line-height: 2em;
+  font-weight: 300;
+  font-size: 13px;
+}
+.fac-img{
+  background-image: url("images/background-1.jpg");
+  height: 120px;
+  width: 160px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+table{
+margin-top: 20px;
+margin-bottom: 20px;
+}
+td{
+  padding: 10px;
+}
+table, th, td{
+  border: 1px solid #2B2F26;
+  border-collapse: collapse;
+  padding: 6px 15px 6px 15px;
+}
+.row1, .row3{
+  background-color: #F2EADD;
+}
+/*Home*/
+.main-title{
+  font-size: 85px;
+  font-weight: 400;
+  margin-bottom: 5px;
+}
+.sub-title{
+  font-size: 50px;
+  margin-top: 0;
+  font-weight: 100;
+}
+.art-row{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  margin: 15px;
+}
+.art-title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   color: #F2F1E8;
-  height: 100px;
   background-color: #2B2F26;
-  padding-left: 20px;
+  height: 50px;
+  width: auto;
+  font-size: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.prod1{
+  flex: 1 1 55%;
+  display: flex;
+  align-items: flex-end;
+  background-image: url("images/product-1.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: 450px;
+  margin: 5px;
+}
+.prod2{
+  flex: 1 1 15%;
+  background-image: url("images/product-2.jpg");
+  display: flex;
+  align-items: flex-end;
+  height: 450px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  margin: 5px;
+
+}
+.prod3{
+  flex: 1 1 15%;
+  background-image: url("images/product-3.jpg");
+  display: flex;
+  align-items: flex-end;
+  margin: 5px;
+  height: 450px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.prod4{
+  flex: 1 1 15%;
+  background-image: url("images/product-4.jpg");
+  display: flex;
+  align-items: flex-end;
+  height: 260px;
+  background-position: left;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 5px;
+
+}
+.prod5{
+  flex: 1 1 15%;
+  background-image: url("images/product-5.jpg");
+  display: flex;
+  align-items: flex-end;
+  height: 260px;
+  background-position: left;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 5px;
+
+}
+.prod6{
+  flex: 1 1 35%;
+  background-image: url("images/product-6.jpg");
+  display: flex;
+  align-items: flex-end;
+  height: 260px;
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 5px;
+
+}
+.prod7{
+  flex: 1 1 15%;
+  background-image: url("images/product-7.jpg");
+  display: flex;
+  align-items: flex-end;
+  height: 260px;
+  background-position: left;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 5px;
+
 }
