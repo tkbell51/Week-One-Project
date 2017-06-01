@@ -56,7 +56,7 @@ nav a:active {
   align-self: flex-start;
 }
 .icon-logo:active {
-  background-image: url("images/bent-creek-logo-coral.png");
+  background-image: imgage("images/bent-creek-logo-coral.png");
 }
 /*Footer*/
 footer {
